@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    app:cardBackgroundColor="@color/black_shade_2"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:id="@+id/idRL.Currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/black_shade_1"
+        android:padding="6dp"
+        >
+
+        <TextView
+            android:id="@+id/idTVSymbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:padding="3dp"
+            android:text="Symbol"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+
+        <TextView
+            android:id="@+id/internetSwitchDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="OFFLINE"
+            android:textColor="@color/dark_red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVSymbol"
+            android:text="Name"
+            android:id="@+id/idTVCurrencyName"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyName"
+            android:text="Rate"
+            android:id="@+id/idTVCurrencyRate"
+            android:layout_toLeftOf="@id/idIVCurrencyImage"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/idIVCurrencyImage"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:padding="3dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyRate"
+            android:text="Market Cap"
+            android:id="@+id/idTVCurrencyMarketCap"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyMarketCap"
+            android:text="Market Cap Rank"
+            android:id="@+id/idTVCurrencyMarketCapRank"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyMarketCapRank"
+            android:text="Total Volume"
+            android:id="@+id/idTVCurrencyTotalVolume"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyTotalVolume"
+            android:text="High 24H"
+            android:id="@+id/idTVCurrencyHigh24"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyHigh24"
+            android:text="Low 24H"
+            android:id="@+id/idTVCurrencyLow24"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyLow24"
+            android:text="Price Change 24H"
+            android:id="@+id/idTVCurrencyPriceChange24H"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyPriceChange24H"
+            android:text="Percentage Change 24H"
+            android:id="@+id/idTVPercentageChange"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVPercentageChange"
+            android:text="Circulating Supply"
+            android:id="@+id/idTVCurrencyCirculatingSupply"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyCirculatingSupply"
+            android:text="Total Supply"
+            android:id="@+id/idTVCurrencyTotalSupply"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyTotalSupply"
+            android:text="All Time High"
+            android:id="@+id/idTVCurrencyATH"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyATH"
+            android:text="All Time Low"
+            android:id="@+id/idTVCurrencyATL"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyATL"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/idTVCurrencyLastUpdated"
+            android:text="Last Updated"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="3dp"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idPBLoading"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/round_corner"
+            android:elevation="2dp"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/item_menu" />
+
+        <CheckBox
+            android:id="@+id/cbHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCurrencyATL"
+            app:useMaterialThemeColors="false"
+            android:button="@drawable/selector_favorite_currency"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
