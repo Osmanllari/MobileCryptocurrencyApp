@@ -1,1 +1,8 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/pPzcIL7W)
+Mobile Application that uses external API's to display real-time information about popular cryptocurrencies. Application offers offline capabilities and allows users to mark currencies as favorite.
+
+Libraries used:
+Room - database
+GSON - parsing JSON
+Volley - API communication
+
+Developed in Java using Android Studio.
